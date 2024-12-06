@@ -1,0 +1,32 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: magenta;
+}
+
+
+@media(width: 500px) {
+    div {
+        background-color: aqua;
+    }
+}
+
+@media(min-width: 501px) {
+    div {
+        background-color: rgb(120, 44, 73);
+    }
+}
+
+@media(max-width: 499px) {
+    div {
+        background-color: rgb(173, 99, 14);
+    }
+}
+
+
+/* combining media queries */
+@media (min-width: 200px) and (max-width: 300px) {
+    div {
+        background-color: blueviolet;
+    }
+}

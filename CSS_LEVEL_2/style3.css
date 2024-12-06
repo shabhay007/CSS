@@ -1,0 +1,28 @@
+div {
+    /* background-color: pink; */
+
+    /* display: inline - it takes width till content*/
+    /* display: inline; */
+
+
+    /* 2nd */
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+
+    /* when we use display : inline -> then margin top and bottom, padding, height, width doesn't works */
+    /* display: inline; */
+
+    /* So in that case we uses display : inline-block */
+    display: inline-block;
+}
+
+#greenBox {
+    visibility: hidden;
+}
+
+button {
+    /* display: block - it takes full width i.e. 100% */
+    display: block;
+}

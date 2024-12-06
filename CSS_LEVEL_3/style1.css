@@ -1,0 +1,28 @@
+#box1 {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    font-size: 10px;
+}
+
+/* Children div of div1 */
+#box2 {
+    background-color: yellow;
+    height: 50%;
+    width: 30%;
+    margin-left: 10%;
+
+    /* Font size with em is relative to parents font size */
+    /* here 2em represents -> 2 times font size relative to parents font size i.e. 40px*/
+    font-size: 2em;
+
+    /* here width is relative to its own font size i.e. here font size is 2em */
+    /* i.e. 10 (parent box1 font size) * 2 = 20px */
+    /* So, width = 5 * 20 = 100px */
+    width: 5em;
+
+    /* rem (Roots em) - it is a font size relative to font size of root element i.e. body tag. */
+    /* roots font size = 16px */
+    /* So, here relative width = 5 * 16 = 80px */
+    width: 5rem;
+}

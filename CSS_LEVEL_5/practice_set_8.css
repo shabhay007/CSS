@@ -1,0 +1,27 @@
+.loader {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid rgb(212, 231, 95);
+    border-left: 20px solid rgb(243, 104, 104);
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+    /* Activating Animation */
+    animation-name: spinAnimation;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes spinAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

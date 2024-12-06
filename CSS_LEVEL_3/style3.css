@@ -1,0 +1,52 @@
+div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1 {
+    background-color: red;
+    position: static;
+
+    /* No position properties will work because we have set position to static */
+}
+
+#box2 {
+    background-color: green;
+    position: relative;
+
+    /* when an element is set to position: relative, the top, right, bottom, and left 
+    properties adjust the element's position relative to its original position in the document flow. 
+    But only one of top or bottom and one of left or right will have an effect in each direction. */
+    top: 20px;
+    left: 20px;
+    right: 10px; /* This will be ignored */
+    bottom: 10px; /* This will be ignored */
+
+    z-index: 1;
+}
+
+#box3 {
+    background-color: aqua;
+    position: absolute;
+
+    /* when position is absolute then positioning changes a/c (relative) to its closest ancestor element
+    i.e. a/c body tag (closest ancestor of box3 div) in this case. */
+    top: 170px;
+    left: 20px;
+
+    z-index: -4;
+}
+
+#box4 {
+    background-color: pink;
+    position: fixed;
+
+    /* positioned relative to browser screen. */
+    /* when position is fixed, you can place elements in any position on screen*/
+    top: 50px;
+
+    z-index: 4;
+}
+
